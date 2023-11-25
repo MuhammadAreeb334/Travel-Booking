@@ -56,3 +56,27 @@
 .tour__title a:hover {
   color: var(--secondary-color);
 }
+.card__bottom h5 {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+.card__bottom h5 span {
+  font-size: .8rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.booking__btn {
+  background: var(--secondary-color) !important;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem !important;
+}
+.booking__btn a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.booking__btn a:hover {
+  color: var(--primary-color);
+}
