@@ -34,3 +34,19 @@
 .hero-img-box {
     padding-top: 1rem;
 }
+
+.services__subtitle {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #ee6e6e;
+    font-family: var(--subtitle-font-name);
+}
+.services__title {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.feature__tour-title {
+    font-size: 2.3rem;
+    font-weight: 500;
+}

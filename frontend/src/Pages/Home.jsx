@@ -6,6 +6,8 @@ import HeroImg from "./../assets/images/Hero-image-1.jpg";
 import HeroImg2 from "./../assets/images/Hero-image-2.jpg";
 import HeroVideo from "./../assets/images/hero-video.mp4";
 import SearchBar from "../Shared/SearchBar";
+import ServiceList from "../Services/ServiceList";
+import FeaturedTourList from "../Components/FeaturedTour/FeaturedTourList";
 
 const Home = () => {
   return (
@@ -50,8 +52,31 @@ const Home = () => {
                 <img src={HeroImg2} alt="Australia" />
               </div>
             </Col>
-
             <SearchBar />
+          </Row>
+        </Container>
+      </section>
+
+      <section>
+        <Container>
+          <Row>
+            <Col lg='3'>
+              <h5 className="services__subtitle">Our Service</h5>
+              <h2 className="services__title">We Offer the Best Service</h2>
+            </Col>
+            <ServiceList />
+          </Row>
+        </Container>
+      </section>
+
+      <section>
+        <Container>
+          <Row>
+            <Col lg='12' className="mb-5">
+              <SubTitle subTitle={"Explore"} />
+              <h2 className="feature__tour-title">Our Feature Tours</h2>
+            </Col>
+            <FeaturedTourList />
           </Row>
         </Container>
       </section>
