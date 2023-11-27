@@ -5,6 +5,7 @@ import SubTitle from "../Shared/SubTitle";
 import HeroImg from "./../assets/images/Hero-image-1.jpg";
 import HeroImg2 from "./../assets/images/Hero-image-2.jpg";
 import HeroVideo from "./../assets/images/hero-video.mp4";
+import ExperienceImg from "./../assets/images/experience.jpg" 
 import SearchBar from "../Shared/SearchBar";
 import ServiceList from "../Services/ServiceList";
 import FeaturedTourList from "../Components/FeaturedTour/FeaturedTourList";
@@ -60,7 +61,7 @@ const Home = () => {
       <section>
         <Container>
           <Row>
-            <Col lg='3'>
+            <Col lg="3">
               <h5 className="services__subtitle">Our Service</h5>
               <h2 className="services__title">We Offer the Best Service</h2>
             </Col>
@@ -72,11 +73,53 @@ const Home = () => {
       <section>
         <Container>
           <Row>
-            <Col lg='12' className="mb-5">
+            <Col lg="12" className="mb-5">
               <SubTitle subTitle={"Explore"} />
               <h2 className="feature__tour-title">Our Feature Tours</h2>
             </Col>
             <FeaturedTourList />
+          </Row>
+        </Container>
+      </section>
+
+      <section>
+        <Container>
+          <Row>
+            <Col lg="6">
+              <div className="experience__content">
+                <SubTitle subTitle={"Experience"} />
+
+                <h2>
+                  With our expertise, expect nothing
+                  <br /> but the best from us.
+                </h2>
+                <p>
+                  we're committed to delivering excellence in every aspect of
+                  your journey.
+                  <br /> Trust us to make your travel dreams a reality.
+                </p>
+              </div>
+
+              <div className="counter__wrapper d-flex align-items-center gap-5">
+                <div className="counter__box">
+                  <span>150+</span>
+                  <h6>Successful trips</h6>
+                </div>
+                <div className="counter__box">
+                  <span>10+</span>
+                  <h6>Regular clients</h6>
+                </div>
+                <div className="counter__box">
+                  <span>3</span>
+                  <h6>Years experience</h6>
+                </div>
+              </div>
+            </Col>
+            <Col lg="6">
+              <div className="experience__img">
+                <img src={ExperienceImg} alt="Experience Image" />
+              </div>
+            </Col>
           </Row>
         </Container>
       </section>
