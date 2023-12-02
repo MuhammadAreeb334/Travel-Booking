@@ -9,6 +9,9 @@ import ExperienceImg from "./../assets/images/experience.jpg"
 import SearchBar from "../Shared/SearchBar";
 import ServiceList from "../Services/ServiceList";
 import FeaturedTourList from "../Components/FeaturedTour/FeaturedTourList";
+import MasonryImagesGallery from "../Components/ImagesGallery/MasonryImagesgallery";
+import Testimonials from "../Components/Testimonial/Testimonials";
+import Newslatter from "../Shared/Newslatter";
 
 const Home = () => {
   return (
@@ -91,7 +94,7 @@ const Home = () => {
 
                 <h2>
                   With our expertise, expect nothing
-                  <br /> but the best from us.
+                  <br /> but the best from us
                 </h2>
                 <p>
                   we're committed to delivering excellence in every aspect of
@@ -123,6 +126,37 @@ const Home = () => {
           </Row>
         </Container>
       </section>
+
+      <section>
+        <Container>
+          <Row>
+            <Col lg='12'>
+              <SubTitle subTitle={"Gallery"} />
+              <h2 className="gallery__title">Visit our customer tour gallery</h2>
+            </Col>
+            <Col lg='12'>
+              <MasonryImagesGallery />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      <section>
+        <Container>
+          <Row>
+            <Col lg='12'>
+              <SubTitle subTitle={'Testimonials'}  />
+              <h2 className="testimonial__title">Customer reviews about us</h2>
+            </Col>
+
+            <Col lg='12'>
+              <Testimonials />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      <Newslatter />
     </>
   );
 };
