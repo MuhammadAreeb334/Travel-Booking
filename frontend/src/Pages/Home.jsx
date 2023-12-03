@@ -5,7 +5,7 @@ import SubTitle from "../Shared/SubTitle";
 import HeroImg from "./../assets/images/Hero-image-1.jpg";
 import HeroImg2 from "./../assets/images/Hero-image-2.jpg";
 import HeroVideo from "./../assets/images/hero-video.mp4";
-import ExperienceImg from "./../assets/images/experience.jpg" 
+import ExperienceImg from "./../assets/images/experience.png" 
 import SearchBar from "../Shared/SearchBar";
 import ServiceList from "../Services/ServiceList";
 import FeaturedTourList from "../Components/FeaturedTour/FeaturedTourList";
