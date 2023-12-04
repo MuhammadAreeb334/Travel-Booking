@@ -4,7 +4,7 @@ import Home from "./../Pages/Home";
 import Login from "./../Pages/Login";
 import Register from "./../Pages/Register";
 import SearchResultList from "./../Pages/SearchResultList";
-import TourDetail from "./../Pages/TourDetail";
+import TourDetail from "../Pages/TourDetail";
 import Tours from "./../Pages/Tours";
 
 const Routers = () => {
@@ -13,7 +13,7 @@ const Routers = () => {
       <Route path="/" element={<Navigate to="/home" />} />
       <Route path="/home" element={<Home />} />
       <Route path="/tours" element={<Tours />} />
-      <Route path="/tours:id" element={<TourDetail />} />
+      <Route path="/tours/:id" element={<TourDetail />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/tours/search" element={<SearchResultList />} />
