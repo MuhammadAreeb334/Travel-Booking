@@ -5,6 +5,8 @@ import { useParams } from "react-router-dom";
 import tourData from "../assets/data/tours";
 import calculateAvgRating from "../Utils/avgRating";
 import avatar from "../assets/images/avatar.jpg";
+import Bokking from "../Components/Booking/Bokking";
+import NewsLetter from '../Shared/Newslatter'
 
 const TourDetail = () => {
   const { id } = useParams();
@@ -29,7 +31,7 @@ const TourDetail = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     const reviewText = reviewMsgRef.current.value;
-    alert(`${reviewText}, ${tourRating}`);
+    //alert(`${reviewText}, ${tourRating}`);
 
   };
 
@@ -51,7 +53,7 @@ const TourDetail = () => {
                         class="ri-star-fill"
                         style={{ color: "var(--secondary-color)" }}
                       ></i>{" "}
-                      {calculateAvgRating === 0 ? null : avgRating}{" "}
+                      {avgRating === 0 ? null : avgRating}{" "}
                       {totalRating === 0 ? (
                         "Not Rated"
                       ) : (
@@ -143,9 +145,14 @@ const TourDetail = () => {
                 </div>
               </div>
             </Col>
+
+            <Col lg='4'>
+              <Bokking tour={tour} avgRating = {avgRating} />
+            </Col>
           </Row>
         </Container>
       </section>
+      <NewsLetter />
     </>
   );
 };
