@@ -66,7 +66,7 @@ const Register = () => {
                       onChange={handleChange}
                     />
                   </FormGroup>
-                  <Button className="btn secondary__btn auth__btn" type="submit">Login</Button>
+                  <Button className="btn secondary__btn auth__btn" type="submit">Create Account</Button>
                 </Form>
                 <p>Already have account?<Link to='/login'>Login</Link></p>
               </div>
