@@ -4,16 +4,25 @@ import { Link } from "react-router-dom";
 import calculateAvgRating from "../Utils/avgRating";
 import "./TourCard.css";
 
-const TourCard = ({ tour }) => {
+import tourData from "../assets/data/tours";
+// console.log("ss",tourData)
+
+
+const TourCard = ({ tour,user }) => {
   const { id, title, city, photo, price, featured, reviews } = tour;
 
   const {totalRating, avgRating} = calculateAvgRating(reviews)
+
+  const getImage = (title) => {
+    let obj = tourData.find(el => el.title == title);
+    return obj ? obj.photo : ''
+  }
 
   return (
     <div className="tour__card">
       <Card>
         <div className="tour__img">
-          <img src={photo} alt="tour-img" />
+          <img src={getImage(title)} alt="tour-img" />
           {featured && <span>Featured</span>}
         </div>
 
@@ -41,7 +50,7 @@ const TourCard = ({ tour }) => {
               ${price} <span> / per person</span>
             </h5>
             <button className="btn booking__btn">
-              <Link to={`/tours/${id}`}>Book Now</Link>
+              <Link to={user ? `/tours/${id}` : '/login'}>Book Now</Link>
             </button>
           </div>
         </CardBody>

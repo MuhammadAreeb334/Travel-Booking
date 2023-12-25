@@ -1,12 +1,13 @@
 import React, {useState} from "react";
 import { Container, Row, Col, Form, FormGroup, Button } from "reactstrap";
-import { Link } from "react-router-dom";
+import { Link, useNavigate  } from "react-router-dom";
 import "../Styles/login.css";
 
 import loginImg from "../assets/images/login.png";
 import userIcon from "../assets/images/user.png";
 
 const Login = () => {
+  const navigate = useNavigate();
 
   const [credentials, setCredentials] = useState({
     email: undefined,
@@ -14,7 +15,31 @@ const Login = () => {
   });
 
   const handleClick = e => {
-    e.preventDefault()
+    e.preventDefault();
+    // console.log(credentials)
+    fetch("http://localhost:4000/api/user/login", {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(credentials) 
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data.data);
+        if(!data.data){
+          alert(data.status)
+        }
+        else {
+          localStorage.setItem('user', JSON.stringify(data.data));
+          // console.log(localStorage.getItem('user'))
+          navigate('/tours')
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      }
+       );
   }
 
   const handleChange = (e) => {

@@ -12,6 +12,12 @@ const Tours = () => {
   const [pageCount, setPageCount] = useState(0);
   const [page, setPage] = useState(0);
 
+  const [user,setUser] = useState(() => {
+    const localuser = localStorage.getItem('user');
+   return localuser ? JSON.parse(localuser) : null 
+  });
+  // console.log(user)
+
   useEffect(() => {
     const pages = Math.ceil(5 / 4);
     setPageCount(pages);
@@ -33,7 +39,7 @@ const Tours = () => {
           <Row>
             {tourData?.map(tour => (
               <Col lg="3" className="mb-4" key={tour.id}>
-                <TourCard tour={tour} />
+                <TourCard tour={tour} user={user} />
               </Col>
             ))}
 

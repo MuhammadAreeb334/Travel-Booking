@@ -146,7 +146,7 @@ const tours = [
   },
   {
     id: "08",
-    title: "Snowy Mountains, Thailand",
+    title: "Rainy Mountains, Thailand",
     city: "Thailand",
     distance: 500,
     address: "Somewhere",
