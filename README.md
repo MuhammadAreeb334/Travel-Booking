@@ -7,15 +7,15 @@ Group Partner:
 
 2-Ahsan Naeem (CSC-21F-014)
 
-#SRS:
+# SRS:
 
-#1. Introduction
+# 1. Introduction
 
 The Travel Booking Website is an all-in-one online platform dedicated to making travel planning a breeze. This platform is designed to offer users an intuitive interface to discover, personalize, and book their dream tours effortlessly.
 
-#2. Functionalities
+# 2. Functionalities
 
-#2.1 User Interaction
+# 2.1 User Interaction
 
 •	Tour Search: Users can easily search for tours using keywords, locations, or preferences.
 
@@ -29,7 +29,7 @@ The Travel Booking Website is an all-in-one online platform dedicated to making 
 
 •	Newsletter: Stay updated with the latest offers, destinations, and travel tips by subscribing.
 
-#2.2 Page Details
+# 2.2 Page Details
 
 •	Home Page: Engaging sections including navigation, hero banner, search bar, service highlights, featured tours, user experiences, image gallery, testimonials, newsletter subscription, and footer.
 
@@ -37,9 +37,9 @@ The Travel Booking Website is an all-in-one online platform dedicated to making 
 
 •	Tours Page: Showcase of available tours, refine search, newsletter subscription, and footer.
 
-#3. Page Structure
+# 3. Page Structure
 
-#3.1 Home Page
+# 3.1 Home Page
 
 •	Header: User-friendly navigation for seamless exploration.
 
@@ -61,7 +61,7 @@ The Travel Booking Website is an all-in-one online platform dedicated to making 
 
 •	Footer: Accessible links for important pages and social media connections.
 
-#3.2 Tour Page
+# 3.2 Tour Page
 
 •	Header: Easy navigation and refining options for tours.
 
@@ -75,12 +75,12 @@ The Travel Booking Website is an all-in-one online platform dedicated to making 
 
 •	Footer: Links for essential pages and contact details.
 
-4. Additional Features
+# 4. Additional Features
 
 •	User Authentication: Secure and user-friendly login and registration system.
 
 •	Admin Panel: Accessible dashboard for streamlined management of tours, user data, and website content.
 
-#5. Conclusion
+# 5. Conclusion
 
 The Travel Booking Website wants to be easy to use and interesting. It wants to make finding and booking tours simple for everyone.
