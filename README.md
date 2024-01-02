@@ -1,11 +1,4 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Travel Booking
 
 Hi, Our topic for the project of software engineering is E-Learning Website
 
@@ -17,7 +10,9 @@ Group Partner:
 
 #1. Introduction
 The Travel Booking Website is an all-in-one online platform dedicated to making travel planning a breeze. This platform is designed to offer users an intuitive interface to discover, personalize, and book their dream tours effortlessly.
+
 #2. Functionalities
+
 #2.1 User Interaction
 •	Tour Search: Users can easily search for tours using keywords, locations, or preferences.
 •	Login/Register: Access personalized features by creating an account or logging in securely.
@@ -25,10 +20,14 @@ The Travel Booking Website is an all-in-one online platform dedicated to making 
 •	Customize Tours: Personalize travel experiences by tailoring tour packages.
 •	Review Tours: Share experiences and provide feedback by reviewing booked tours.
 •	Newsletter: Stay updated with the latest offers, destinations, and travel tips by subscribing.
+
 #2.2 Page Details
 •	Home Page: Engaging sections including navigation, hero banner, search bar, service highlights, featured tours, user experiences, image gallery, testimonials, newsletter subscription, and footer.
+
 •	About Page: Details about the platform's mission, team, and vision for travelers.
+
 •	Tours Page: Showcase of available tours, refine search, newsletter subscription, and footer.
+
 #3. Page Structure
 #3.1 Home Page
 •	Header: User-friendly navigation for seamless exploration.
