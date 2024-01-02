@@ -1,6 +1,6 @@
 # Travel Booking
 
-Hi, Our topic for the project of software engineering is E-Learning Website
+Hi, Our topic for the project of software engineering is Travel Booking website.
 
 Group Partner: 
 
