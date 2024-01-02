@@ -8,13 +8,11 @@ import userRoute from "./controllers/UserControllers.js";
 
 // const tourRoute = require('./controllers/TourControllers');
 
-dotenv.config(); // Make sure this line is at the top of your index.js file
+dotenv.config(); 
 
 const app = express();
 const port = process.env.PORT || 8000;
 
-
-//Database connection
 
 const connectDB = async () => {
   try {
@@ -26,7 +24,7 @@ const connectDB = async () => {
     process.exit(1)
   }
 }
-//middleware
+
 app.use(express.json());
 app.use(cors());
 app.use(cookieParser());

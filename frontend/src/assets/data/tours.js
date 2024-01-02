@@ -159,6 +159,21 @@ const tours = [
     photo: tourImg03,
     featured: false,
   },
+  {
+    id: "09",
+    title: "Rainy Mountains, Thailand",
+    city: "Thailand",
+    distance: 500,
+    address: "Somewhere",
+    price: 99,
+    maxGroupSize: 8,
+    desc: "this is the description",
+    reviews: [
+    ],
+    avgRating: 4.5,
+    photo: "../images/tour-img03.jpg",
+    featured: false,
+  },
 ];
 
 export default tours;
