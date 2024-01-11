@@ -8,6 +8,10 @@ Group Partner:
 
 2-Ahsan Naeem (CSC-21F-014)
 
+# Assignment 2: 
+
+Youtube Video Link: https://youtu.be/tg8uGdpO8bw
+
 # SRS:
 
 # 1. Introduction
